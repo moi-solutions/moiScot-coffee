@@ -15,7 +15,10 @@ module Lita
         day = time.strftime("%a")
 
         # read data json file
-        file = File.read('lib/lita/handlers/data.json')
+        spec = Gem::Specification.find_by_name("moiscot-coffee")
+        gem_root = spec.gem_dir
+        path = gem_root + '/lib/lita/handlers/data.json'
+        file = File.read(path)
         data_hash = JSON.parse(file)
 
         # compare day with data
