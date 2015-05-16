@@ -1,5 +1,6 @@
 require 'lita'
 require 'json'
+require 'timezone'
 
 module Lita
   module Handlers
@@ -10,8 +11,11 @@ module Lita
       })
 
       def coffee(response)
+        # time zone
+        timezone = Timezone::Zone.new :zone => 'America/Managua'
+
         # get day from now
-        time = Time.new
+        time = timezone.time(Time.now)
         day = time.strftime("%a")
 
         # read data json file
