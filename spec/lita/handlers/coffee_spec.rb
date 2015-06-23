@@ -5,7 +5,6 @@ describe Lita::Handlers::Coffee, lita_handler: true do
     it "Respond correct name" do
       send_command("coffee")
       expect(replies.last).to eq("Hoy le toca a Paulo McNally")
-      puts replies.last
     end
   end
 end
