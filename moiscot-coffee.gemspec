@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'moiscot-coffee'
-  spec.version       = '0.0.7'
+  spec.version       = '0.0.8'
   spec.authors       = 'Paulo McNally'
   spec.email         = ['paulomcnally@gmail.com']
   spec.description   = %q{Lita handler delivering coffee assignation}
