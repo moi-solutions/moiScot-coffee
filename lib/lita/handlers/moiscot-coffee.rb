@@ -24,7 +24,7 @@ module Lita
         # compare day with data
         data_hash.each do |row|
           if row['day'] == day
-            response.reply "Hoy le toca a #{row['name']}"
+            response.reply "Hoy le toca a #{row['name']} :coffee:"
           end
         end
 
